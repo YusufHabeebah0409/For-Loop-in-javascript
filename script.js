@@ -7,5 +7,4 @@ if(i%2==0){
     // console.log(`${i} Odd Number`);
     show.innerHTML += `<h3 style="color:plum;">${i} Odd Number</h3>`
 }
-    
 }
