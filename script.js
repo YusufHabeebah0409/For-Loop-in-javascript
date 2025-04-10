@@ -1,10 +1,14 @@
-for (let i=1;i<=100; i++) {
-//    console.log(i);
-if(i%2==0){
-//   console.log(`${i} Even Number`);
-  show.innerHTML += `<h1 style="color:purple;">${i} Even Number</h1>`
-}else{
-    // console.log(`${i} Odd Number`);
-    show.innerHTML += `<h3 style="color:plum;">${i} Odd Number</h3>`
-}
+// for (let i = 1; i <= 100; i++) {
+//   if (i % 2 == 0) {
+//     show.innerHTML += `<h1 style="color:purple;">${i} Even Number</h1>`
+//   } else {
+//     show.innerHTML += `<h3 style="color:plum;">${i} Odd Number</h3>`
+//   }
+// }
+
+for (i=1;i<=5;i++) {
+  for (j=1;j<=12;j++) {
+    console.log(`${i} * ${j} = ${i*j}`);
+    
+  } 
 }
