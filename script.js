@@ -1,39 +1,14 @@
 const addition = () => {
-  for(i=1;i<=column.value;i++){
-    for(j=1;j<=row.value;j++){
-      showContent.innerHTML += ` <tr>
-            <td>${i} + ${j} = ${i+j}</td>
-        </tr>`
+  let output = showContent.innerHTML
+  output = ""
+  for (i = 1; i <= column.value; i++) {
+    output += `<tr>`
+    for (j = 1; j <= row.value; j++) {
+      output += `<td>${i} + ${j} = ${i + j}</td>`
     }
-     
+    output += `</tr>`
   }
-}
-const subtrate = () => {
-  for(i=1;i<=column.value;i++){
-    for(j=1;j<=row.value;j++){
-      showContent.innerHTML += ` <tr>
-            <td>${i} - ${j} = ${i-j}</td>
-        </tr>`
-    }
-     
-  }
-}
-const divide = () => {
-  for(i=1;i<=column.value;i++){
-    for(j=1;j<=row.value;j++){
-      showContent.innerHTML += ` <tr>
-            <td>${i} / ${j} = ${i/j}</td>
-        </tr>`
-    }
-  }
-}
-
-const multiple = () => {
-  for(i=1;i<=column.value;i++){
-    for(j=1;j<=row.value;j++){
-      showContent.innerHTML += ` <tr>
-            <td>${i} * ${j} = ${i*j}</td>
-        </tr>`
-    }
-  }
+  showContent.innerHTML = output
+  column.value = ""
+  row.value = ""
 }
