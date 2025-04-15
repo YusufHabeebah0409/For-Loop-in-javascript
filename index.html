@@ -7,22 +7,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
         <h3>🧮 Simple Math Table Generator</h3>
-        <div class="input-section">
-            <input type="number" id="row" placeholder="Rows">
-            <input type="number" id="column"placeholder="Columns"> 
-        </div>
-        <div class="button-group">
-            <button onclick="addition()">➕</button>
-            <button onclick="subtrate()">➖</button>
-            <button onclick="divide()">➗</button>
-            <button onclick="multiple()">✖</button>
-        </div>
+                <input type="number" id="row" placeholder="Rows">
+                <input type="number" id="column"placeholder="Columns"> 
+                <button onclick="addition()">➕</button>
+                <button onclick="subtrate()">➖</button>
+                <button onclick="divide()">➗</button>
+                <button onclick="multiple()">✖</button>  
         <div class="table-wrapper">
-            <table id="showContent"></table>
+            <table id="showContent" border="1px solid black"></table>
         </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
